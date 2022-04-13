@@ -1,5 +1,6 @@
 // Desafio 1
 function compareTrue(param1, param2) {
+  
   if (param1 === true && param2 === true){ 
     return true;
   }
@@ -13,45 +14,44 @@ function compareTrue(param1, param2) {
 
 // Desafio 2
 function calcArea(base, height) {
-  let triangulo((base * height)/2);
-  return triangulo
+  let triangulo = (base * height)/2; {
+  return (triangulo);
+  }
 }
 
 // Desafio 3
 function splitSentence() {
-  if (splitSentence === 'go trybe') {
-    return (['go', 'Trybe']);
-  }
-  else if (splitSentence === 'vamo que vamo'){
-    return (['vamo', 'que', 'vamo']);
-  }
-  else (splitSentence === 'foguete') {
-    return (['foguete']);
-  }
+  
+   
 }
 
 // Desafio 4
+
 function concatName(arrayStrings) {
-  return (arrayStrings[arrayStrings.lenght[-1]] + ' ' + [arrayStrings.lenght[0]])
+  
+  return arrayStrings[arrayStrings.length -1] + "," + ' ' + arrayStrings[0]
 }
 
 
 // Desafio 5
 function footballPoints(wins, ties) {
-  if (wins === 14 && ties === 8) {
-    return ('50 pontos');
-  }
-  else if (wins ===1 && ties === 2) {
-    return ('5 pontos');
-  }
-  else (wins === 0 && ties === 0){
-    return ('0 pontos');
-  }
-}
+    return (wins * 3 + ties);
 
+}  
+    
 // Desafio 6
-function highestCount() {
-  
+function highestCount(arrayNumber) {
+  let biggestNumber = arrayNumber[0]
+  for (let index =0; index < arrayNumber.lenght; index += 1){
+    if (array[index] > biggestNumber) {
+      biggestNumber = array[index]
+    }
+      }
+  for (let index = 0; index < arrayNumber.lenght; index +=1) {
+    if (array[index] === biggestNumber);
+    return biggestNumber + 1
+  }
+ 
 }
 
 // Desafio 7
