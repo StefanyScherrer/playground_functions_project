@@ -20,10 +20,12 @@ function calcArea(base, height) {
 }
 
 // Desafio 3
-function splitSentence() {
+function splitSentence(arrayDeStrings) {
   
-   
+let resultado = arrayDeStrings.split(" ", arrayDeStrings.length);
+return resultado;
 }
+
 
 // Desafio 4
 
@@ -41,17 +43,18 @@ function footballPoints(wins, ties) {
     
 // Desafio 6
 function highestCount(arrayNumber) {
-  let biggestNumber = arrayNumber[0]
-  for (let index =0; index < arrayNumber.lenght; index += 1){
-    if (array[index] > biggestNumber) {
-      biggestNumber = array[index]
+  let biggestNumber = arrayNumber[0];
+  let contador = 1;
+  for (let index =1; index < arrayNumber.length; index += 1){
+    if (biggestNumber === arrayNumber[index]){
+      contador +=1;
     }
-      }
-  for (let index = 0; index < arrayNumber.lenght; index +=1) {
-    if (array[index] === biggestNumber);
-    return biggestNumber + 1
-  }
- 
+    if (biggestNumber < arrayNumber[index]){
+      biggestNumber = arrayNumber[index];
+      contador = 1;
+    }
+}
+return contador;
 }
 
 // Desafio 7
