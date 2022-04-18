@@ -71,33 +71,94 @@ function catAndMouse(mouse, cat1, cat2) {
 }
 
 // Desafio 8
-function fizzBuzz() {
-  // seu código aqui
+function fizzBuzz(array){
+  let stringArray = [];
+for (let number of array) {
+  let isFizz = (number % 3) === 0;
+  let isBuzz = (number % 5) === 0;
+  if (isBuzz && isFizz) {
+    stringArray.push('fizzBuzz');
+  } else if (isFizz) {
+    stringArray.push('fizz');
+  } else if (isBuzz) {
+    stringArray.push('buzz');
+  } else {
+    stringArray.push('bug!');
+  }
 }
-
+return stringArray;
+return array.map((number) => {
+  if (number % 3 === 0 && number % 5 === 0) return 'fizzBuzz';
+  if (number % 3 === 0) return 'fizz';
+  if (number % 5 === 0) return 'buzz';
+  return 'bug!';
+});
+}
+  
 // Desafio 9
-function encode() {
-  // seu código aqui
-}
-function decode() {
-  // seu código aqui
-}
+  function encode(encDec) {
+    let newEnc = '';
+    for (let i of encDec) {
+      if (i === 'a') {
+        newEnc += '1';
+      } else if (i === 'e') {
+        newEnc += '2';
+      } else if (i === 'i') {
+        newEnc += '3';
+      } else if (i === 'o') {
+        newEnc += '4';
+      } else if (i === 'u') {
+        newEnc += '5';
+      } else {
+        newEnc += i;
+      }
+    }
+    return newEnc;
+  }
+  
+  function decode(encDec) {
+    let newDec = '';
+    for (let i of encDec) {
+      if (i === '1') {
+        newDec += 'a';
+      } else if (i === '2') {
+        newDec += 'e';
+      } else if (i === '3') {
+        newDec += 'i';
+      } else if (i === '4') {
+        newDec += 'o';
+      } else if (i === '5') {
+        newDec += 'u';
+      } else {
+        newDec += i;
+      }
+    }
+    return newDec;
+  }
 
 // Desafio 10
-function techList() {
-  // seu código aqui
-}
+function techList(technology, name) {
+    let objetos = 
+    name = "Stefany"
+    tech = ["React", "Jest", "HTML", "CSS", "JavaScript"]
+  
+  {
+    if (technology.length === 0) {
+      return 'Vazio!';
+    
+  }
 
-module.exports = {
-  calcArea,
-  catAndMouse,
-  compareTrue,
-  concatName,
-  decode,
-  encode,
-  fizzBuzz,
-  footballPoints,
-  highestCount,
-  splitSentence,
-  techList,
-};
+
+  module.exports = {
+    calcArea,
+    catAndMouse,
+    compareTrue,
+    concatName,
+    decode,
+    encode,
+    fizzBuzz,
+    footballPoints,
+    highestCount,
+    splitSentence,
+    techList,
+  };
