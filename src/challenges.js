@@ -137,16 +137,10 @@ return array.map((number) => {
   }
 
 // Desafio 10
-function techList(technology, name) {
-    let objetos = 
-    name = "Stefany"
-    tech = ["React", "Jest", "HTML", "CSS", "JavaScript"]
-  
-  {
-    if (technology.length === 0) {
-      return 'Vazio!';
-    
-  }
+function techList() {
+   
+}
+
 
 
   module.exports = {
